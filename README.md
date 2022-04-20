@@ -4,7 +4,7 @@ So let's improve together
 
   > **When you see a good move look for a better one** ~Emanuel Lasker
 
-  > **The pin is mighier than the sword**  ~Fred Reinfeld
+  > **The pin is mightier than the sword**  ~Fred Reinfeld
 ## How play
  - Create a new issue 
  - Input your solution as the title of the issue
