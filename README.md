@@ -9,3 +9,7 @@ So let's improve together
  - Create a new issue 
  - Input your solution as the title of the issue
  - Wait for the bot to verify your solution
+# Puzzle
+## Title : Black to move and stalemate in 1
+
+![Current Puzzle](https://github.com/bradley-Amuj/bradley-Amuj/blob/main/defaultImage.png)
