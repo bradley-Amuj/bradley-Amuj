@@ -1,3 +1,9 @@
+
+
+<div class ='container' style ="color:red">
+
+<div class ='left' style ="display: inline-block">
+  
 🚧🚧🚧🚧 **Under development** 🚧🚧🚧
 ## ♟️🐴 👑Let's solve puzzles ♟️🐴 👑
 As chess enthusiast, solving puzzles is one of the fastest ways to improve in calculations. 
@@ -10,10 +16,17 @@ So let's improve together
  - Create a new issue 
  - Input your solution as the title of the issue
  - Wait for the bot to verify your solution
+
+  
+</div>
+
+<div class = 'right' style ="display: inline-block">
+  
 # Puzzle
 ## Title : Black to move and stalemate 
-
+[Click to enter solution](https://github.com/bradley-Amuj/bradley-Amuj/issues)
+  
 <img src="https://github.com/bradley-Amuj/bradley-Amuj/blob/main/defaultImage.png" alt="current_puzzle" width="400"/>
+</div>
 
-
-
+</div>
