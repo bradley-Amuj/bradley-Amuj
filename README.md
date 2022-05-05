@@ -13,4 +13,7 @@ So let's improve together
 # Puzzle
 ## Title : Black to move and stalemate 
 
-![Current Puzzle](https://github.com/bradley-Amuj/bradley-Amuj/blob/main/defaultImage.png)
+<img src="https://github.com/bradley-Amuj/bradley-Amuj/blob/main/defaultImage.png" alt="current_puzzle" width="400"/>
+
+
+
