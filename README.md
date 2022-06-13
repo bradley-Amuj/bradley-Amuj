@@ -1,11 +1,12 @@
-
-
 <div class ='container' style ="color:red;width:100%">
 
 <div class ='left' style ="width:50%">
   
 🚧🚧🚧🚧 ***Under development*** 🚧🚧🚧
+## Lichess Daily Puzzle ## 
 ### ♟️🐴 👑Let's solve puzzles ♟️🐴 👑
+
+
 As chess enthusiast, solving puzzles is one of the fastest ways to improve in calculations. 
 So let's improve together 
 
