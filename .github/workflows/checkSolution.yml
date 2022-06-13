@@ -2,18 +2,10 @@ on:
   issues:
     types: [opened, edited, milestoned]
 jobs:
-  Explore-GitHub-Actions:
+  build:
     runs-on: ubuntu-latest
     steps:
       - run: echo "The Solution entered was ${{github.event.issue.title}}"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - name: run scripy
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-      -name: script
-        run: |
-          python3 app.py
-
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!
 
