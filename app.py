@@ -1,15 +1,14 @@
-
 import requests
 import chess.pgn
 import io
+from pathlib import Path
 
+board = None
 
 def main():
     endpoint_url = "https://lichess.org/api/puzzle/daily"
     response = requests.get(url=endpoint_url)
     data = response.json()
-
-    side_to_play = ''
     pgn = data['game']['pgn']
     sln = data['puzzle']['solution']
     rating = data['puzzle']['rating']
@@ -17,7 +16,9 @@ def main():
     game = chess.pgn.read_game(io.StringIO(pgn))
     board = game.board()
 
-    print(get_side_to_play(pgn))
+    #print(get_side_to_play(pgn))
+    
+    updateReadMe(pgn)
 
 
 # for move in pgn.split():
@@ -33,12 +34,26 @@ def main():
 def get_side_to_play(pgn):
     game = chess.pgn.read_game(io.StringIO(pgn))
     board = game.board()
-
     for move in game.mainline_moves():
         board.push(move)
+    return ["White to move" if board.turn else "Black to move",board]
 
-    return "White to move" if board.turn else "Black to move"
-
+def updateReadMe(pgn):
+    readme = Path('./ReadME.md').read_text()
+    side_to_play,board =get_side_to_play(pgn)
+    board_img = chess.svg.board(board)
+    
+    outputfile = open('defaultImage.svg', "w")
+    outputfile.write(board_img)
+    outputfile.close()
+    
+    print(readme[:606])
+    updatedReadME =readme[:606]+side_to_play+'/n'+ readme[619:]
+    
+    
+    # with open('./README.md', "w+") as f:
+    #     f.write(updatedReadME)
+    
 
 def get_picture():
     return None

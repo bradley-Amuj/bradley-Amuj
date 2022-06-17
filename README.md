@@ -23,10 +23,10 @@ So let's improve together
 <div class = 'right' style ="display: inline-block">
 
 ## Puzzle
-### Title : Black to move and stalemate 
+### Title : BLACK TO MOVE
 [Click to enter solution](https://github.com/bradley-Amuj/bradley-Amuj/issues)
 
-<img src="https://github.com/bradley-Amuj/bradley-Amuj/blob/main/defaultImage.png" alt="current_puzzle" width="400"/>
+<img src="https://github.com/bradley-Amuj/bradley-Amuj/blob/main/defaultImage.svg" alt="current_puzzle" width="400"/>
 </div>
 
 </div>
