@@ -21,7 +21,7 @@ def main():
 
 # print(side_to_play)
 # print(pgn)
-# print(sln)
+    print(sln)
 # print(rating)
 
 
@@ -40,7 +40,9 @@ def updateReadMe(pgn):
     outputfile.write(board_img)
     outputfile.close()
     
-    readme = Path('ReadME.md').read_text()
+    with open('README.md','r') as f:
+        readme = f.read()
+    # readme = Path('ReadME.md').read_text()
     updatedReadME =readme[:606]+side_to_play+'/n'+ readme[619:]
     
     with open('README.md', "w+") as f:

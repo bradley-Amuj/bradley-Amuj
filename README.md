@@ -23,7 +23,7 @@ So let's improve together
 <div class = 'right' style ="display: inline-block">
 
 ## Puzzle
-### Title : BLACK TO MOVE
+### Title : White to move/n/n
 [Click to enter solution](https://github.com/bradley-Amuj/bradley-Amuj/issues)
 
 <img src="https://github.com/bradley-Amuj/bradley-Amuj/blob/main/defaultImage.svg" alt="current_puzzle" width="400"/>
