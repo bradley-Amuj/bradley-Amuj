@@ -1,7 +1,7 @@
 import requests
 import chess.pgn
 import io
-from pathlib import Path
+import os 
 
 board = None
 
@@ -12,9 +12,17 @@ def main():
     pgn = data['game']['pgn']
     sln = data['puzzle']['solution']
     rating = data['puzzle']['rating']
+    
+    
+    input_sln = os.environ['INPUT_SLN']
+    checkSln(input_sln)
 
-    game = chess.pgn.read_game(io.StringIO(pgn))
-    board = game.board()
+    
+def checkSln(sln):
+    print(sln)
+    
+    
+
     
 if __name__ == '__main__':
     main()
