@@ -40,10 +40,10 @@ def updateReadMe(pgn):
     outputfile.write(board_img)
     outputfile.close()
     
-    readme = Path('./ReadME.md').read_text()
+    readme = Path('ReadME.md').read_text()
     updatedReadME =readme[:606]+side_to_play+'/n'+ readme[619:]
     
-    with open('./README.md', "w+") as f:
+    with open('README.md', "w+") as f:
         f.write(updatedReadME)
     
 
