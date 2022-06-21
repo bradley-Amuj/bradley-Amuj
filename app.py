@@ -15,14 +15,8 @@ def main():
 
     game = chess.pgn.read_game(io.StringIO(pgn))
     board = game.board()
-
-    #print(get_side_to_play(pgn))
     
     updateReadMe(pgn)
-
-
-# for move in pgn.split():
-#     print(move)
 
 
 # print(side_to_play)
@@ -39,7 +33,6 @@ def get_side_to_play(pgn):
     return ["White to move" if board.turn else "Black to move",board]
 
 def updateReadMe(pgn):
-    readme = Path('./ReadME.md').read_text()
     side_to_play,board =get_side_to_play(pgn)
     board_img = chess.svg.board(board)
     
@@ -47,16 +40,12 @@ def updateReadMe(pgn):
     outputfile.write(board_img)
     outputfile.close()
     
-    print(readme[:606])
+    readme = Path('./ReadME.md').read_text()
     updatedReadME =readme[:606]+side_to_play+'/n'+ readme[619:]
     
+    with open('./README.md', "w+") as f:
+        f.write(updatedReadME)
     
-    # with open('./README.md', "w+") as f:
-    #     f.write(updatedReadME)
-    
-
-def get_picture():
-    return None
 
 
 def check_sln():
