@@ -15,9 +15,10 @@ jobs:
         with:
           python-version: 3.8 #install the python needed
           cache: 'pip'
-          run: pip install -r requirements.txt
-      - name: run script 
-        run: | 
-          python3 ./app.py
+      - run: pip install -r requirements.txt
+      - run: python3 ./app.py
+   
+   
+        
        
 
