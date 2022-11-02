@@ -6,24 +6,24 @@ from pathlib import Path
 board = None
 
 def main():
-    endpoint_url = "https://lichess.org/api/puzzle/daily"
+    #endpoint_url = "https://lichess.org/api/puzzle/daily"
+    endpoint_url = "https://lichess.org/api/puzzle/Uk3YD"
+    
     response = requests.get(url=endpoint_url)
     data = response.json()
     pgn = data['game']['pgn']
     sln = data['puzzle']['solution']
     rating = data['puzzle']['rating']
+    
+    print('This is the pgn'+ pgn)
+    print('This is the rating'+ str(rating))
+    print('This is the solution' + str(sln))
+    
 
     game = chess.pgn.read_game(io.StringIO(pgn))
     board = game.board()
     
     updateReadMe(pgn)
-
-
-# print(side_to_play)
-# print(pgn)
-    # print(sln)
-# print(rating)
-
 
 def get_side_to_play(pgn):
     game = chess.pgn.read_game(io.StringIO(pgn))
