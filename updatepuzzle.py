@@ -34,6 +34,8 @@ def get_side_to_play(pgn):
 
 def updateReadMe(pgn):
     side_to_play,board =get_side_to_play(pgn)
+    
+    print("This is the side to play " + side_to_play)
     board_img = chess.svg.board(board)
     
     outputfile = open('defaultImage.svg', "w")
