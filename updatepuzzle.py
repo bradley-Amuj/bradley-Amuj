@@ -7,7 +7,7 @@ board = None
 
 def main():
     #endpoint_url = "https://lichess.org/api/puzzle/daily"
-    endpoint_url = "https://lichess.org/api/puzzle/Uk3YD"
+    endpoint_url = "https://lichess.org/api/puzzle/61uUR"
     
     response = requests.get(url=endpoint_url)
     data = response.json()
