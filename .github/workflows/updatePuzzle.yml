@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '*/10 * * * *' #Everyday at 23:00 UTC
+    - cron: '*/6 * * * *' #Everyday at 23:00 UTC
 jobs: 
   build:
     runs-on: ubuntu-latest
