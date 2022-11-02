@@ -1,7 +1,7 @@
 on:
   schedule:
-    - cron: "0 0 * * *" #Everyday at midnight
-jobs:
+    - cron: "*/5 * * * *" #Everyday at midnight
+jobs: 
   build:
     runs-on: ubuntu-latest
     steps:
