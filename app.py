@@ -15,16 +15,11 @@ def main():
     sln = data['puzzle']['solution']
     rating = data['puzzle']['rating']
     
-    print('This is the pgn'+ pgn)
-    print('This is the rating'+ str(rating))
-    print('This is the solution' + str(sln))
-    
-    
-    # input_sln = os.environ['INPUT_SLN']
-    # checkSln(input_sln)
+    input_sln = os.environ['INPUT_SLN']
+    checkSln(input_sln)
  
 def checkSln(sln):
-    print(sln)
+    print("This is the entered  solution " + str(sln))
     
     
 
