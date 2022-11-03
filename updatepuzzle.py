@@ -46,7 +46,7 @@ def updateReadMe(pgn):
 
     with open('README.md','r') as read_me_file:
         read_me_file_text =read_me_file.read()
-        updatedReadME =read_me_file_text[:606]+side_to_play+'/n'+ read_me_file_text[619:] + str(datetime.now())
+        updatedReadME =read_me_file_text[:606]+side_to_play+'/n'+ str(datetime.now())+ read_me_file_text[619:] 
         read_me_file.close()
     
     with open('README.md', "w+") as f:
