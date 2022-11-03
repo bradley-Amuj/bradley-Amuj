@@ -23,10 +23,11 @@ So let's improve together
 <div class = 'right' style ="display: inline-block">
 
 ## Puzzle
-### Title : Black to move/n/n/n/n/n
+### Title : White to move/n/n/n/n/n/n/n/n/n/n/n/n
 [Click to enter solution](https://github.com/bradley-Amuj/bradley-Amuj/issues)
 
 <img src="https://github.com/bradley-Amuj/bradley-Amuj/blob/main/defaultImage.svg" alt="current_puzzle" width="400"/>
 </div>
 
 </div>
+2022-11-03 11:56:59.169682
